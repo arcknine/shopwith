@@ -1,0 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Zeyada);
+@import url(http://fonts.googleapis.com/css?family=Lovers+Quarrel);
+@import url(http://fonts.googleapis.com/css?family=Seaweed+Script);
+
+body {
+	background-image: url(bg-sky.png);
+	background-repeat: repeat-x;
+}
+p {
+	font-family: 'Zeyada', cursive, Arial, serif;
+	font-size:36px;
+	font-weight:normal;
+}
