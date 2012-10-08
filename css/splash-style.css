@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Seaweed+Script);
 
 body {
-	background-image: url(bg-sky.png);
+	background-image: url(../images/bg-sky.png);
 	background-repeat: repeat-x;
 }
 p {
