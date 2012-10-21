@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Splash extends CI_Controller {
+class Migrations extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,11 +18,26 @@ class Splash extends CI_Controller {
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index()
+	{	
+		$this->load->view('migrations/index');
+	}
+	
+	public function migrate()
 	{
-		$this->layout->layout('layouts/splash');
-		$this->layout->view('splash-view');
+		if(!empty($_POST) && $_POST['username'] == 'admin' && $_POST['password'] == 'sh0pw1th'){
+			$this->load->library('migration');
+	
+			if( !$this->migration->current() )
+			{
+				show_error($this->migration->error_string());
+			}
+			
+			$this->load->view('migrations/migrate');
+		}
+		else
+			redirect(base_url('migrations'));
 	}
 }
 
-/* End of file splash.php */
-/* Location: ./application/controllers/splash.php */
+/* End of file migrations.php */
+/* Location: ./application/controllers/migrations.php */
