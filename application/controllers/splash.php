@@ -19,6 +19,10 @@ class Splash extends CI_Controller {
 	 */
 	public function index()
 	{
+		if(isset($_POST)){
+			$this->load->model('early_adaptor');
+			$this->early_adaptor->save_adaptor($_POST);
+		}
 		$this->layout->layout('layouts/splash');
 		$this->layout->view('splash-view');
 	}

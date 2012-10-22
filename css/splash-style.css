@@ -6,8 +6,57 @@ body {
 	background-image: url(../images/bg-sky.png);
 	background-repeat: repeat-x;
 }
-p {
+p, h3 {
 	font-family: 'Zeyada', cursive, Arial, serif;
 	font-size:36px;
 	font-weight:normal;
+}
+
+h3 {
+	margin: 0;
+}
+
+.adaptors-form {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.adaptors-form ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.adaptors-form ul li{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+
+.adaptors-form input[type=email] {
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: -1px;
+	font-size: 18px;
+	border: 3px solid #CCC;
+	outline: none;
+	width: 250px;
+	box-shadow: 0 1px 7px #CCC inset;
+}
+
+.adaptors-form .sign-up-btn {
+	font-family: 'Zeyada', cursive, Arial, serif;
+	color: #C30;
+	font-weight: bold;
+	padding: 0px 12px;
+	font-size: 27px;
+	margin-top: -1px;
+	background-image: linear-gradient(top, #FBAB49 0%, #F98131 100%);
+	background-image: -o-linear-gradient(top, #FBAB49 0%, #F98131 100%);
+	background-image: -moz-linear-gradient(top, #FBAB49 0%, #F98131 100%);
+	background-image: -webkit-linear-gradient(top, #FBAB49 0%, #F98131 100%);
+	background-image: -ms-linear-gradient(top, #FBAB49 0%, #F98131 100%);
+	border: 1px solid #D66822;
+	border-radius: 5px;
+	cursor: pointer;
 }

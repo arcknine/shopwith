@@ -64,7 +64,7 @@ $autoload['libraries'] = array('session', 'layout', 'xmlrpc');
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('url', 'file');
+$autoload['helper'] = array('url', 'file', 'shopwith');
 
 
 /*

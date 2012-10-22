@@ -15,7 +15,7 @@
     </fieldset>
     <fieldset>
       <label for="username">password</label>
-      <input type="text" name="password" />
+      <input type="password" name="password" />
     </fieldset>
     <fieldset>
       <input type="submit" name="submit" value="Migrate" />
