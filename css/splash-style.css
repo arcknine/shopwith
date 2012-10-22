@@ -33,7 +33,7 @@ h3 {
 	position: relative;
 }
 
-.adaptors-form input[type=email] {
+.adaptors-form input[type=email], .adaptors-form input[type=text] {
 	padding: 10px;
 	border-radius: 5px;
 	margin-top: -1px;
