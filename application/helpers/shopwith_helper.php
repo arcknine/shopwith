@@ -4,6 +4,27 @@
 function printr($data)
 {
 	echo '<pre>';
-	printr($data);
+	print_r($data);
 	echo '</pre>';
+}
+
+function set_attr($data)
+{
+	
+}
+
+function get_attr($data)
+{
+	foreach($data as $key => $values)
+	{
+		if($key != 'submit')
+		{
+			$result['table'] = $key;
+			foreach($values as $child_key => $child_values)
+			{
+				$result['attr'][$child_key] = $child_values;
+			}
+		}
+	}
+	return $result;
 }
